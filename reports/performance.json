@@ -1,0 +1,30 @@
+{
+  "BTCUSDT_2026-10-28": {
+    "sims": 13632,
+    "decision_steps": 2453760,
+    "seconds": 3.085443476000364,
+    "steps_per_second": 795269.7947916355,
+    "trades_in_day": 824870
+  },
+  "BTCUSDT_2026-10-29": {
+    "sims": 13632,
+    "decision_steps": 2453760,
+    "seconds": 2.1001843949998147,
+    "steps_per_second": 1168354.5529821045,
+    "trades_in_day": 1299432
+  },
+  "ETHUSDT_2026-10-28": {
+    "sims": 13632,
+    "decision_steps": 2453760,
+    "seconds": 2.0122102400000585,
+    "steps_per_second": 1219435.2017609891,
+    "trades_in_day": 485129
+  },
+  "ETHUSDT_2026-10-29": {
+    "sims": 13632,
+    "decision_steps": 2453760,
+    "seconds": 2.061499618000198,
+    "steps_per_second": 1190279.1436751867,
+    "trades_in_day": 1028055
+  }
+}

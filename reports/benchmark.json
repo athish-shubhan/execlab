@@ -1,0 +1,11 @@
+{
+  "parent_orders": 461,
+  "decision_steps_per_order": 180,
+  "trades_in_window_per_order": 13523.431670281996,
+  "numba_orders_per_s": 20869.336900618357,
+  "python_orders_per_s": 376.11636979891944,
+  "numba_decision_steps_per_s": 3756480.642111304,
+  "python_decision_steps_per_s": 67700.9465638055,
+  "numba_window_trades_per_s": 282225051.579607,
+  "speedup": 55.48638287606463
+}
