@@ -4,7 +4,7 @@
 
 ![CI](https://github.com/OWNER/execlab/actions/workflows/ci.yml/badge.svg)
 
-An event-driven execution simulator that replays Binance BTCUSDT and ETHUSDT trades, overlays a parent order, and compares market, TWAP, VWAP, participation, Almgren-Chriss and a model-driven passive/aggressive policy on implementation shortfall. Every headline number is out of sample (walk-forward by day), shown under three fill assumptions, and comes with a block-bootstrap interval. Validation and the trial ledger come from [Skeptic](../skeptic).
+An event-driven execution simulator that replays Binance BTCUSDT and ETHUSDT trades, overlays a parent order, and compares market, TWAP, VWAP, participation, Almgren-Chriss and a model-driven passive/aggressive policy on implementation shortfall. Every headline number is out of sample (walk-forward by day), shown under three fill assumptions, and comes with a block-bootstrap interval. Validation and the trial ledger come from [Skeptic](https://github.com/OWNER/skeptic).
 
 ## Key findings
 
@@ -81,7 +81,7 @@ More: [intraday fact sheet](reports/factsheet.png), [fill-probability calibratio
 
 ## How this would transfer to FX and rates
 
-The shortfall decomposition, fill-model framing and validation protocol carry over unchanged. What changes is the data: FX and rates have no public prints, so the queue and fill models would be estimated from a desk's own fills, last-look outcomes and RFQ responses. The fee lesson becomes a spread lesson: in dealer markets, resting versus crossing is about information leakage and hit rates, not maker rebates. The [AUD Cost Atlas](../aud-cost-atlas) covers the FX side with public quotes.
+The shortfall decomposition, fill-model framing and validation protocol carry over unchanged. What changes is the data: FX and rates have no public prints, so the queue and fill models would be estimated from a desk's own fills, last-look outcomes and RFQ responses. The fee lesson becomes a spread lesson: in dealer markets, resting versus crossing is about information leakage and hit rates, not maker rebates. The [AUD Cost Atlas](https://github.com/OWNER/aud-cost-atlas) covers the FX side with public quotes.
 
 ## References
 
