@@ -1,3 +1,5 @@
+# Build from the directory that contains both the skeptic and execlab checkouts:
+#   docker build -f execlab/Dockerfile -t execlab .
 FROM python:3.11-slim
 WORKDIR /work
 COPY skeptic /work/skeptic

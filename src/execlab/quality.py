@@ -21,7 +21,7 @@ def trades_report(tr: Trades, q: QuoteGrid | None = None) -> dict[str, Any]:
         "trades": len(tr),
         "agg_id_gaps": int((ids != 1).sum()),
         "out_of_order_timestamps": int((dt < 0).sum()),
-        "max_gap_seconds": float(dt.max()) if dt.size else 0.0,
+        "max_gap_seconds": float(np.max(dt)) if dt.size else 0.0,
         "gaps_over_10s": int((dt > 10).sum()),
         "zero_or_negative_qty": int((tr.qty <= 0).sum()),
         "trades_per_second_mean": float(len(tr) / max((tr.ts[-1] - tr.ts[0]) / 1e6, 1)),

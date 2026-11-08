@@ -1,6 +1,6 @@
 PY ?= python
 
-.PHONY: install test lint data reproduce full record quality note benchmark
+.PHONY: install test lint data reproduce full record quality appendix benchmark
 install:
 	$(PY) -m pip install -e ../skeptic -e ".[recorder,dev]"
 test:
@@ -18,8 +18,7 @@ record:               ## live L2 recorder (run for 2-4 weeks on your own machine
 	$(PY) -m execlab.recorder --symbols BTCUSDT ETHUSDT --levels 20 --out data/l2
 quality:              ## data quality report for recorded L2 data
 	$(PY) -c "from execlab.quality import l2_report, to_markdown; print(to_markdown([l2_report('data/l2', s) for s in ('BTCUSDT','ETHUSDT')]))"
-note:
+appendix:             ## regenerate docs/appendix.md (the PDF note is checked in)
 	$(PY) studies/note_appendix.py
-	../tools/note2pdf.sh docs/note.md docs/note.pdf docs/appendix.md
 benchmark:
 	$(PY) studies/benchmark.py
